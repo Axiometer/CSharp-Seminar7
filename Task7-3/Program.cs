@@ -15,9 +15,7 @@ void WriteArrayToConsole(int[,] intArray)
     for (int i = 0; i < intArray.GetLength(0); i++)
     {
         for (int j = 0; j < intArray.GetLength(1); j++)
-        {
             Console.Write($"{intArray[i, j]}\t");
-        }
         Console.WriteLine();
     }
 }
@@ -29,9 +27,7 @@ double[] GetAverageInColumns(int[,] array)
     for (int column = 0; column < averageArray.Length; column++)
     {
         for (int row = 0; row < array.GetLength(0); row++)
-        {
             averageArray[column] += array[row, column];
-        }
         averageArray[column] = Math.Round(averageArray[column] / array.GetLength(0), 1);
     }
     return averageArray;
