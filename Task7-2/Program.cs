@@ -2,7 +2,7 @@
 // и возвращает значение этого элемента или же указание, что такого элемента нет
 
 // Вывод массива в консоль
-void WriteArrayToConsole(double[,] doubleArray)  //Метод вывода массива
+void WriteArrayToConsole(double[,] doubleArray)
 {
     for (int i = 0; i < doubleArray.GetLength(0); i++)
     {
@@ -29,7 +29,7 @@ double[,] GetRandomArray(int m, int n, int minValue=-10, int maxValue=10)
 }
 
 // Ввод числа пользователем
-int GetNumberFromUser(string message)  //метод ввода числа
+int GetNumberFromUser(string message)
 {
     while(true)     
     {
@@ -41,7 +41,8 @@ int GetNumberFromUser(string message)  //метод ввода числа
     }
 }
 
-void PrintResult(double[,] array, int A, int B)  //Метод поиска числа и вывода результата
+// Вывод результата
+void PrintResult(double[,] array, int A, int B)
 {
     if (A<array.GetLength(0) && B<array.GetLength(1)) 
     {

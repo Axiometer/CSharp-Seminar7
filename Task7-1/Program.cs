@@ -1,7 +1,7 @@
 ﻿// Задайте двумерный массив размером m×n, заполненный случайными вещественными числами
 
 // Ввод числа пользователем
-int GetNumberFromUser(string message)  //метод ввода числа
+int GetNumberFromUser(string message)
 {
     while(true)     
     {
@@ -14,7 +14,7 @@ int GetNumberFromUser(string message)  //метод ввода числа
 }
 
 // Вывод массива в консоль
-void WriteArrayToConsole(double[,] doubleArray)  //Метод вывода массива
+void WriteArrayToConsole(double[,] doubleArray)
 {
     for (int i = 0; i < doubleArray.GetLength(0); i++)
     {
@@ -27,7 +27,7 @@ void WriteArrayToConsole(double[,] doubleArray)  //Метод вывода ма�
 }
 
 // Заполнение массива
-double[,] GetArray(int m, int n, int minValue, int maxValue)    //Метод заполнения массива случайными вещественными числами
+double[,] GetArray(int m, int n, int minValue, int maxValue)
 {
     double[,] result = new double[m, n];
     for (int i = 0; i < m; i++)
